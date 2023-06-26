@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    @font-face {
+      font-family: 'Pacifico';
+      src: url('path/to/pacifico-regular.woff2') format('woff2'),
+           url('path/to/pacifico-regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Quicksand';
+      src: url('path/to/quicksand-regular.woff2') format('woff2'),
+           url('path/to/quicksand-regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    header {
+      background-color: #ed2213;
+      color: #1c36c9;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between; 
+      margin: 20px;
+    }
+
+    section {
+      flex: 1;
+      margin: 10px;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 36px;
+      text-shadow: 2px 2px #000;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0f24db;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    /*//////////// footer /////////// */
+
+    footer {
+      background-color: #b9e9fc;
+      display: grid;
+      grid-template-columns: 450px 2fr 500px;
+      grid-gap: 10px;
+      padding: 0 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .fa:hover {
+      opacity: 0.9;
+    }
+
+    .fa-facebook {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #cb2027;
+      color: white;
+    }
+
+    .fa-youtube {
+      background: #ff5700;
+      color: white;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 40px;
+      width: 40px;
+      text-decoration: none;
+      margin: 5px 4px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .favorite-song {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .photo-shadow {
+      box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.9);
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      position: relative;
+      flex-basis: calc(25% - 20px);
+      margin: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	  font-size:14px;
+    }
+    
+    .card img {
+      width: 310px;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card p {
+      margin-bottom: 0;
+	  font-size:14px;
+    }
+	h3 {
+	font-size:20px;
+	color:#1c36c9;
+	}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <img class="photo-shadow" src="img/1685966982197.jpg" alt="img/1685966982197" style="width:200px; height: 200px; margin-left: 4px; border-radius: 50%;">
+      <p>My name is Sandesh Subedi. I was born on July 5, 1994, in Nepal. I have a keen interest in the field of IT, which is why I am currently pursuing a master's degree at KCGI.</p>
+      <br> <br> 
+      
+        <h3>About Kyoto</h3>
+        <p1>Recently, I am living in Kyoto city, the most popular city in Japan. There are many visitable areas with historical places and temples like Kinkakuji Temple, Ryoanji Temple, Tofukuji Temple, Nijo Castle, etc.</p1>
+        <div class="container">
+          <div class="card">
+            <img src="img/kinkakuji.jpg" alt="Kinkakuji Temple">
+            <div class="card-content">
+              <h3>Kinkakuji Temple</h3>
+              <p>Kinkaku-ji, also known as the Golden Pavilion, is a Zen Buddhist temple in Kyoto, Japan.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/ryoanji.jpg" alt="Ryoanji Temple">
+            <div class="card-content">
+              <h3>Ryoanji Temple</h3>
+              <p>Ryoan-ji is a Zen temple located in Kyoto and is famous for its rock garden, considered one of the finest examples of Japanese Zen gardens.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/tofukuji.jpg" alt="Tofukuji Temple">
+            <div class="card-content">
+              <h3>Tofukuji Temple</h3>
+              <p>Tofuku-ji is a large Zen temple in Kyoto, known for its beautiful autumn foliage and the iconic Tsutenkyo Bridge.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/nijo.jpg" alt="Nijo Castle">
+            <div class="card-content">
+              <h3>Nijo Castle</h3>
+              <p>Nijo Castle is a UNESCO World Heritage Site located in Kyoto, famous for its historic significance and stunning gardens.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    
+
+  </main>
+  <footer>
+    <div>
+      <h1>Contact Information</h1>
+      <ul>
+        <li><strong>Home</strong>: Bharatpur-26, Chitwan, Nepal</li>
+        <li><strong>Current Address</strong>: Kyoto, Japan</li>
+        <li><strong>Contact</strong>: 09054857670</li>
+        <li><strong>Mail</strong>: subedisandi27@gmail.com</li>
+      </ul>
+      <div class="icon">
+        <a href="https://www.facebook.com/sandesh.subedi.908?mibextid=LQQJ4d" class="fa fa-facebook" target="_blank"></a>
+        <a href="https://www.instagram.com/subedi_sandy8/" class="fa fa-instagram" target="_blank"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+      </div>
+    </div>
+    <div class="favorite-song">
+      <h2>Favorite Song</h2>
+      <iframe width="500" height="250" src="https://www.youtube.com/embed/D-mERpuyZV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </footer>
+</body>
+</html>
